@@ -24,7 +24,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||徐玲|祝您|新年快乐|#❤|');
+      S.UI.simulate('|#countdown 3||某|某|祝|你|生|日|快|乐|#rectangle|');
     }
 
     S.Drawing.loop(function () {
@@ -206,7 +206,7 @@ S.UI = (function () {
         default:
           S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
       }
-    },2500, sequence.length);
+    }, 2000, sequence.length);
   }
 
   function checkInputWidth(e) {
