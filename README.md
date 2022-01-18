@@ -145,7 +145,7 @@ window.onload=function starttime(){
         var minute = parseInt(time%3600/60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
         var second = parseInt(time%60);  // 以60秒为一整份 取余 剩下秒数
         cut=cut-1000;
-        obj.innerHTML="<br>距离2022年还有：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>愿我所念的人平安喜乐，<br>愿我所想的事顺心如意。<br>May the people I think of be safe and happy, <br>and may the things I think of be all right.</span>"
+        obj.innerHTML="<br>距离2023年还有：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>愿我所念的人平安喜乐，<br>愿我所想的事顺心如意。<br>May the people I think of be safe and happy, <br>and may the things I think of be all right.</span>"
         if(msec==0){
         window.location.href="烟花源码.html";
         }
