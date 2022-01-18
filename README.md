@@ -130,7 +130,7 @@ window.addEventListener("resize", onResize);
 requestAnimationFrame(render);
 
 window.onload=function starttime(){
-               time(h1,'2022/1/18');
+               time(h1,'2022/2/1');
         ptimer = setTimeout(starttime,1000); // 添加计时器
 }
     
