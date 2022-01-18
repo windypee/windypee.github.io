@@ -130,13 +130,12 @@ window.addEventListener("resize", onResize);
 requestAnimationFrame(render);
 
 window.onload=function starttime(){
-        var nowtime = new Date();
-        time(h1,nowtime);     // 在一起的时间
+               time(h1,'2022/2/1');
         ptimer = setTimeout(starttime,1000); // 添加计时器
 }
-
-    function time(obj,futimg){
-        var nowtime = new Date().getTime(); // 现在时间转换为时间戳
+    
+   function time(obj,futimg){
+         var nowtime = new Date().getTime(); // 现在时间转换为时间戳
         var futruetime =  new Date(futimg).getTime(); // 未来时间转换为时间戳
         var msec = futruetime-nowtime+cut; // 毫秒 未来时间-现在时间
         var time = (msec/1000);  // 毫秒/1000
@@ -145,8 +144,8 @@ window.onload=function starttime(){
         var minute = parseInt(time%3600/60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
         var second = parseInt(time%60);  // 以60秒为一整份 取余 剩下秒数
         cut=cut-1000;
-        obj.innerHTML="<br>距离2024年还有：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>愿我所念的人平安喜乐，<br>愿我所想的事顺心如意。<br>May the people I think of be safe and happy, <br>and may the things I think of be all right.</span>"
-        if(msec==0){
+        obj.innerHTML="<br>距离2022年春节还有：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>愿我所念的人平安喜乐，<br>愿我所想的事顺心如意。<br>May the people I think of be safe and happy, <br>and may the things I think of be all right.</span>"
+        if(msec<0){
         window.location.href="烟花源码.html";
         }
         return true;
